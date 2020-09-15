@@ -1,0 +1,21 @@
+<div class="main">
+
+<div style="background-color: lightsteelblue; width: 100%; margin-bottom: 9%; text-align: center;">
+  <h5 style="margin-bottom: -3%;">Date: {{ getDate() }}</h5>
+  <h5 style="margin-bottom: -3%;">Time: {{ getTime() }}</h5>
+  <h5>Timestamp: {{ getTimestamp() }}</h5>
+</div>
+
+<div style="display: flex; justify-content: center; margin-left: 5%;">
+  <form [formGroup]="formGroup">
+
+    <ngx-mat-timepicker formControlName="date"
+      [showSeconds]="true" 
+      [enableMeridian]="true">
+    </ngx-mat-timepicker>
+
+  </form>
+</div>
+
+ 
+</div>
